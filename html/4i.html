@@ -1,0 +1,43 @@
+<html>
+<head>
+	<title>palindrome</title>
+	<script type="text/javascript">
+function amountTocoins(amount, coins) 
+{
+ if (amount === 0) 
+  {
+     return [];
+   } 
+ else
+   {
+     if (amount >= coins[0]) 
+       {
+        left = (amount - coins[0]);
+        return [coins[0]].concat( amountTocoins(left, coins) );
+        } 
+      else
+        {
+         coins.shift();
+         return amountTocoins(amount, coins);
+        }
+    }
+} 
+let amm=amountTocoins(46, [25, 10, 5, 2,1])
+let srt=""
+for(let i=0;i<amm.length;i++)
+{srt+=amm[i]
+srt+=" "
+}
+console.log(srt)
+
+</script> 
+</head>
+<body>
+<p><a href="Lab_04.html">back</a></p>
+i) Write a JavaScript function to convert an amount of money to coins. Sample function
+ : amountTocoins(46, [25, 10, 5, 2, 1]) Here 46 is the amount.
+ and 25, 10, 5, 2, 1 are coins. Output : 25, 10, 10, 1
+
+
+</body>
+</html>

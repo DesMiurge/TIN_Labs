@@ -1,0 +1,36 @@
+<html>
+<header>
+<script type="text/javascript">
+function StudentConstructor(first,last,id,gades){
+this.FirstName=first;
+this.LastName=last;
+this.Id=id;
+this.Grades=gades;
+this.test = function(){
+console.log("Name: "+this.FirstName+"  Surname: "+this.LastName);
+}
+this.test2 = function(){
+	let avg=0;
+	for (i=0; i<this.Grades.length; i++) {
+		avg+=this.Grades[i];
+	}
+	avg/=this.Grades.length;
+	console.log("avg grade: "+avg);
+}
+
+
+}
+var Student = new StudentConstructor("A","B",1,[5,4,3]);
+Student.test();
+Student.test2();
+
+</script> 
+</header>
+<body>
+<p><a href="Lab_05.html">back</a></p>
+b)	Implement a constructor function, creating objects 
+representing students – they should include first and last name,
+ id, array with grades (without subject names, just grades) , a method
+ printing first and last name and grade average of a student
+</body>
+</html>

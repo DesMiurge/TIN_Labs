@@ -1,0 +1,50 @@
+h1 {
+  color: blue;
+  font-style: italic;
+  font-size: 300%;
+}
+p {
+  color: red;
+  font-style: oblique;
+  font-size: 160%;
+}
+ol{
+
+}
+header{
+	color: yellow;
+	font-style: oblique;
+	font-size: 40%;
+}
+table, th, td {
+  border: 1px solid black;
+}
+a {
+  color: hotpink;
+  text-decoration: none;
+}
+ul {
+  list-style-type: "<>";
+  padding: 20px;
+  margin: 5px;
+}
+.column {
+  float: left;
+  width: 50%;
+	
+}
+#Ghost2 {
+	float: left;
+}
+#Ghost1 {
+	float: right;
+	
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+}

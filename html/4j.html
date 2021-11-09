@@ -1,0 +1,36 @@
+<html>
+<head>
+	<title>palindrome</title>
+	<script type="text/javascript">
+function binary_Search(items, value){
+    var firstIndex  = 0,
+        lastIndex   = items.length - 1,
+        middleIndex = Math.floor((lastIndex + firstIndex)/2);
+
+    while(items[middleIndex] != value && firstIndex < lastIndex)
+    {
+       if (value < items[middleIndex])
+        {
+            lastIndex = middleIndex - 1;
+        } 
+      else if (value > items[middleIndex])
+        {
+            firstIndex = middleIndex + 1;
+        }
+        middleIndex = Math.floor((lastIndex + firstIndex)/2);
+    }
+
+ return (items[middleIndex] != value) ? -1 : middleIndex;
+}
+var items = [33,44,55,88,101,102,109]
+console.log("index of number '1': "+binary_Search(items, 1));  
+console.log("index of number '88': "+binary_Search(items, 88))
+</script> 
+</head>
+<body>
+<p><a href="Lab_04.html">back</a></p>
+j) Write a JavaScript program for binary search.
+
+
+</body>
+</html>

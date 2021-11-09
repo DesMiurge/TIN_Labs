@@ -1,0 +1,58 @@
+form {
+	font-size: 140%;
+	font-style: italic;
+
+}
+
+body{
+	border:1px #ccc solid;
+	padding: 10px;
+	margin-left: 33%;
+	margin-right: 33%;
+	width:33%;
+	background-color: rgb(106, 117, 149);
+}
+@media (max-width: 1350px) {
+	Body{
+	width:435px;
+	
+	}
+	
+}
+
+header{
+	text-align: center;
+}
+
+
+div{
+	background:rgb(110, 122, 160);
+	margin-top: 10px;
+}
+a:hover {
+  background-color: yellow;
+  color:blue;
+}
+
+#banner{
+	border:1px #ccc solid;
+	padding: 10px;
+}
+.header{
+	font-size: 140%;
+	text-decoration: underline;
+	margin-left: 30px;
+}
+.text{
+	margin-left: 60px;
+	margin-right: 60px;
+}
+.article{
+	border:1px #ccc solid;
+	padding: 10px;
+	
+}
+.mandatory{
+	color:white;
+	background:rgb(90, 100, 130);
+}

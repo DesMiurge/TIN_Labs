@@ -1,0 +1,122 @@
+p{
+	color: rgb(222, 222, 222);
+}
+body {
+  background-color: rgb(106, 117, 149);
+}
+header{
+	display:flex;
+	flex-direction:col;
+}
+.Header_Logo{
+	width: 150px;
+	height:auto;
+	border-radius: 30px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin-left: auto;
+	margin-right: auto;
+	transform: rotate(8deg);
+}
+.Header_TXT{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.Body div{
+	border:1px #ccc solid;
+	padding: 10px;
+}
+.Body{
+	display:flex;
+}
+
+@media (max-width: 800px) {
+	.Body{
+	display:flex;
+	flex-flow: row wrap-reverse;
+	
+	}
+	
+}
+
+
+
+.Texte{
+	display:flex;
+	flex-flow: row wrap;
+
+}
+@media (max-width: 800px) {
+	.Texte{
+	display:flex;
+	flex-flow: row wrap;
+	width: 450px;
+	}
+	
+}
+
+.Article{
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+	width: 400px;
+	height 300px;
+
+}
+.Gallery{
+	width: 450px;
+	display:flex;
+	flex-flow: column;
+}
+
+
+.GallerPNG{
+	width: 150px;
+	height:auto;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+figcaption {
+    background-color: rgb(100, 111, 143);
+    color: #fff;
+    padding: 3px;
+    text-align: center;
+	width: 150px;
+}
+figure{
+	margin-left: auto;
+	margin-right: auto;
+}
+.FooterPNG{
+	height:200px;
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.Footer{
+	border:1px #ccc solid;
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: auto;
+	
+}
+@media (max-width: 800px) {
+.Footer{
+	border:1px #ccc solid;
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 450px;
+	
+}
+	
+}
+	
+}
+
+

@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title>factorial</title>
+	<script type="text/javascript">
+
+function factorial_iterative(number){
+	p=1;
+	for (i = 0; i < number; i++) {
+	  p=p*(i+1);
+	}
+	console.log("Iterative: "+p);
+}
+var recursive = function (number) {
+	if (number <=1) return 1;
+	else return number*recursive(number-1);
+	};
+
+console.log("Recursive: "+recursive(5));
+factorial_iterative(5)
+
+</script> 
+
+</head>
+<body>
+<p><a href="Lab_04.html">back</a></p>
+a) Function calculating the factorial of a number. 
+Do this using recursion and iteration. 
+Create recursive function using function expression, iterative function using function declaration
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title>Fibbonaci</title>
+	
+<script type="text/javascript">
+
+function Fibonacci(number){
+	let x = 0, y = 1, z = 0;
+	for (let i = 0; i < number; i++) {
+    z = x + y;
+    x = y;
+    y = z;
+   }
+   return x;
+}
+
+console.log("Fibonacci sequence (7'th) number: "+Fibonacci(6));
+
+</script> 
+
+</head>
+<body>
+<p><a href="Lab_04.html">back</a></p>
+b) Function calculating nth number in Fibonacci sequence.
+</body>
+</html>

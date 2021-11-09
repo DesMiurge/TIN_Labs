@@ -1,0 +1,33 @@
+<html>
+<head>
+	<title>finden</title>
+	<script type="text/javascript">
+function finden(arr){
+	var high=arr[0];
+	var zwei;
+	//highest
+	for(let i=0;i<arr.length;i++)if(arr[i]>high)high=arr[i];
+	//any lower
+	for(let i=0;i<arr.length;i++){
+		if(arr[i]<high){
+			zwei=arr[i];
+			break;
+		}
+	}
+	//second highest
+	for(let i=0;i<arr.length;i++)if(arr[i]>zwei&&arr[i]<high)zwei=arr[i];
+	console.log("Highest: "+high+"\t\tSecondHighest:"+zwei);
+}
+finden([])
+finden([-1])
+finden([43,2,88,112,11])
+</script> 
+</head>
+<body>
+<p><a href="Lab_04.html">back</a></p>
+
+h) Write a JavaScript function which will
+ take an array of numbers stored and find the second lowest and second greatest numbers, respectively.
+
+</body>
+</html>
