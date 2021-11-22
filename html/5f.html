@@ -1,0 +1,29 @@
+<html>
+<header>
+<script type="text/javascript">
+class Person{
+	
+	constructor(name, surname) { 
+        this.name = name;
+        this.surname = surname;
+    }
+	nameGetter(){
+		return this.name;
+	}
+	nameSetter(name){
+		this.name=name;
+	}
+}
+class Student extends Person{
+	constructor(name, surname) { 
+        super(name, surname);
+    }
+}
+
+</script> 
+</header>
+<body>
+<p><a href="Lab_05.html">back</a></p>
+f) Create class Person with first and last name, as well as getter and setter for full name. Rewrite Student class from task E to extend class Person
+</body>
+</html>

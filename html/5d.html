@@ -1,0 +1,39 @@
+<html>
+<header>
+<script type="text/javascript">
+    
+Object.prototype.Student = {
+courses:[1,2,3,4,0]
+};
+    
+function createProto(nam,surnam,id){
+  var test = Object.create(Student);
+  test.name=nam;
+  test.surname=surnam;
+  test.id=1;
+return test;
+}
+function gradeGetter(obj){
+	let avg=0;
+	for (i=0; i<obj.courses.length; i++) {
+		avg+=obj.courses[i];
+	}
+	avg/=obj.courses.length;
+  return avg;
+}
+function nameSetter(obj){
+obj.name='xxx';
+  return obj;
+}
+var test = createProto('Adam','Smith',0);
+console.log(gradeGetter(test));
+console.log(nameSetter(test).name);
+
+</script> 
+</header>
+<body>
+<p><a href="Lab_05.html">back</a></p>
+d) Extend task B with getter for average grade property
+ and getter and setter for student’s full name
+</body>
+</html>
