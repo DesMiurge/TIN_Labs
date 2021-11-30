@@ -1,5 +1,5 @@
 <html>
-<header>
+<head>
 <script type="text/javascript">
 class Person{
 	
@@ -7,11 +7,13 @@ class Person{
         this.name = name;
         this.surname = surname;
     }
-	nameGetter(){
-		return this.name;
+	get fullName(){
+		return this.name+' '+this.surname;
 	}
-	nameSetter(name){
-		this.name=name;
+	set fullName(name){
+		var words = name.toString().split(' ');
+		this.name = words[0] || '';
+		this.surname = words[1] || '';
 	}
 }
 class Student extends Person{
@@ -20,8 +22,13 @@ class Student extends Person{
     }
 }
 
+var a = new Student();
+a.fullName = "John Smith";
+console.log(a.fullName);
+
+
 </script> 
-</header>
+</head>
 <body>
 <p><a href="Lab_05.html">back</a></p>
 f) Create class Person with first and last name, as well as getter and setter for full name. Rewrite Student class from task E to extend class Person
